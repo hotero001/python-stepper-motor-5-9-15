@@ -41,6 +41,10 @@ StepCounter = 0
 print "Press and enter 0 to spin the motor clockwise"
 print "Press and enter 1 to spin the motor counter-clockwise"
 user_input = input("Please enter something here: ")
+#Still need to make a fix for when a user enters
+#anything with a non-numeric char
+while user_input != 1 and user_input != 0:
+    user_input = input("Please enter a value of either 0 or 1: ")
 
 #Start main loop
 if user_input == 0:
